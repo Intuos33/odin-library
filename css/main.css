@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+.header{
+    margin: 3rem 0;
+}
+
+.tool-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+    background: #f1f1f1;
+}
+
+.legend{
+    display: flex;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.book-card{
+    width: 32%;
+    padding: 1.5rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+#titles{
+    padding-bottom: 0.75rem;
+}
+
+#authors{
+    padding-bottom: 0.75rem;
+}
+
+#num-pages{
+    padding-bottom: 0.75rem;
+}
+
+.read{
+    background: linear-gradient(to right, #bdfff3, #4ac29a);
+}
+
+.unread{
+    background: linear-gradient(to right, #ffdada, #ef3b36);
+}
+
+.color-box{
+    width: 4rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+}
+
+.add-btn{
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    background: white;
+    border: 2px solid #ffdada;
+    border-radius: 5px;
+}
+
+.modal-overlay{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+  
+.modal-content{
+    background-color: white;
+    margin: 20% auto;
+    width: 30%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    z-index: 10000;
+    font-size: 1.25rem;
+}
+  
+.modal-header h2, .modal-footer h3{
+    margin: 0;
+}
+  
+.modal-header{
+    background: lightgray;
+    padding: 15px;
+}
+  
+.modal-body{
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+  
+.modal-footer{
+    margin-top: 1.5rem;
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+  
+.closeBtn{
+    font-size: 30px;
+    float: right;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.5rem;
+}
+
+input, select{
+    height: 2.5rem;
+    font-size: 1.15rem;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+input:focus, select:focus{
+    border: 2px solid lightblue;
+}
+  
