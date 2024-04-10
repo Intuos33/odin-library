@@ -19,10 +19,37 @@ function Book(title, author, pages, language, read){
 
 function displayBook(myBooks){
     let i;
+    var newBook = myBooks[myBooks.length - 1];
+    
+    var flexContainer = document.querySelector('.flex-container');
+    var bookCard = document.createElement('div');
+    var titles = document.createElement('p');
+    var authors = document.createElement('p');
+    var numPages = document.createElement('p');
+    var languages = document.createElement('p');
 
-    for(i = 0; i <= myBooks.length; i++){
-        console.log(myBooks[i].title);
+    bookCard.classList.add('book-card');
+    titles.classList.add('titles');
+    authors.classList.add('authors');
+    numPages.classList.add('num-pages');
+
+    titles.innerHTML = 'Title: ' + newBook.title;
+    authors.innerHTML = 'Author: ' +  newBook.author;
+    numPages.innerHTML = 'Pages: ' + newBook.pages;
+    languages.innerHTML = 'Language: ' + newBook.language;
+
+    if(newBook.read == 'yes'){
+        bookCard.classList.add('read');
+    } else {
+        bookCard.classList.add('unread');
     }
+
+    bookCard.appendChild(titles);
+    bookCard.appendChild(authors);
+    bookCard.appendChild(numPages);
+    bookCard.appendChild(languages);
+    flexContainer.appendChild(bookCard);
+    
 }
 
 function getData(){

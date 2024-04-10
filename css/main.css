@@ -44,15 +44,15 @@
     box-shadow: 0 5px 5px lightgray;
 }
 
-#titles{
+.titles{
     padding-bottom: 0.75rem;
 }
 
-#authors{
+.authors{
     padding-bottom: 0.75rem;
 }
 
-#num-pages{
+.num-pages{
     padding-bottom: 0.75rem;
 }
 
