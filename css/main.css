@@ -56,6 +56,30 @@
     padding-bottom: 0.75rem;
 }
 
+.languages{
+    padding-bottom: 0.75rem;
+}
+
+.read-btn{
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    background: white;
+    border: 2px solid #ffdada;
+    border-radius: 5px;
+    font-size: 1.15rem;
+}
+
+.remove-btn{
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    background: white;
+    border: 2px solid #ffdada;
+    border-radius: 5px;
+    font-size: 1.15rem;
+}
+
 .read{
     background: linear-gradient(to right, #bdfff3, #4ac29a);
 }
